@@ -1,0 +1,16 @@
+body {
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+}
+.app {
+  :global(.navbar-brand) {
+    position:relative;
+    padding-left: 50px;
+  }
+  nav :global(.fa) {
+    font-size: 2em;
+    line-height: 20px;
+  }
+}
+.appContainer {
+  margin: 50px 0; // for fixed navbar
+}
