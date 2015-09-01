@@ -2,6 +2,7 @@ import React, {Component, PropTypes} from 'react';
 import serialize from 'serialize-javascript';
 import DocumentMeta from 'react-document-meta';
 const cdn = '//cdnjs.cloudflare.com/ajax/libs/';
+const tempBootstrapCdn = 'https://cask.scotch.io/bootstrap-4.0.css';
 
 /**
  * Wrapper component containing HTML metadata and boilerplate tags.
@@ -28,7 +29,7 @@ export default class Html extends Component {
           {DocumentMeta.rewind({asReact: true})}
 
           <link rel="shortcut icon" href="/favicon.ico" />
-          <link href={cdn + 'twitter-bootstrap/3.3.5/css/bootstrap.css'}
+          <link href={tempBootstrapCdn}
                 media="screen, projection" rel="stylesheet" type="text/css" />
           <link href={cdn + 'font-awesome/4.3.0/css/font-awesome.min.css'}
                 media="screen, projection" rel="stylesheet" type="text/css" />
